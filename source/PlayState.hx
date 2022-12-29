@@ -2133,11 +2133,11 @@ class PlayState extends MusicBeatState
 		super.update(elapsed);
 
 		if(ratingString == '?') {
-			scoreTxt.text = 'Score: ' + songScore + ' //  Misses: ' + songMisses + ' // Rank: ' + ratingString;
+			scoreTxt.text = 'Score: ' + songScore + ' // Ported By OswaldGamerYT // Misses: ' + songMisses + ' // Rank: ' + ratingString;
 			judgementCounter.text = 'Sicks: 0 \nGoods: 0\nBads: 0\nShits: 0\ne';
                         healthCounter.text = 'Health: 50%';
 		} else {
-			scoreTxt.text = 'Score: ' + songScore + ' // Misses: ' + songMisses + ' // Acc: ' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' + ' // Rank: ' + ratingString + ' (' + ratingFC + ')' ;//peeps wanted no integer rating
+			scoreTxt.text = 'Score: ' + songScore + ' // Ported By OswaldGamerYT // Misses: ' + songMisses + ' // Acc: ' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' + ' // Rank: ' + ratingString + ' (' + ratingFC + ')' ;//peeps wanted no integer rating
                         judgementCounter.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nE';
                         healthCounter.text = 'Health: ' + Math.round(health * 50) + '%'  ;
 		}
